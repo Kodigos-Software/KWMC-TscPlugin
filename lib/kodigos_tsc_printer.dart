@@ -4,7 +4,7 @@ import 'kodigos_tsc_printer_platform_interface.dart';
 
 class KodigosTscPrinter {
   Future<String?> getPlatformVersion() {
-    return KodigosTscPrinterPlatform.instance.getPlatformVersion();
+    return MethodChannelKodigosTscPrinter().getPlatformVersion();
   }
 
   Future<String?> printer(String ip, int port, String zpl) {

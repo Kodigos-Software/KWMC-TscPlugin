@@ -16,6 +16,7 @@ class MethodChannelKodigosTscPrinter extends KodigosTscPrinterPlatform {
     return version;
   }
 
+  @override
   Future<String?> printer(String ip, int port, String zpl) async {
     final String result = await methodChannel.invokeMethod(
         'printer', {'ipAddress': ip, 'portAddress': port, 'message': zpl});

@@ -29,7 +29,8 @@ class KodigosTscPrinterPlugin: FlutterPlugin, MethodCallHandler {
     if (call.method == "getPlatformVersion") {
       result.success("Android ${android.os.Build.VERSION.RELEASE}")
     } 
-    if (call.method.equals("printer")) {
+
+    else if (call.method.equals("printer")) {
       try {
 
           var TscEthernetDll = PrinterTSC()
