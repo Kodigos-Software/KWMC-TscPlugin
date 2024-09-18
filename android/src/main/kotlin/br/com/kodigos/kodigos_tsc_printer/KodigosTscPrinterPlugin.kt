@@ -32,6 +32,8 @@ class KodigosTscPrinterPlugin: FlutterPlugin, MethodCallHandler {
     if (call.method.equals("printer")) {
       try {
 
+          var TscEthernetDll = PrinterTSC()
+
           val policy = ThreadPolicy.Builder().permitAll().build()
           StrictMode.setThreadPolicy(policy)
 
