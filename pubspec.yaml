@@ -1,6 +1,6 @@
 name: kodigos_tsc_printer
 description: "Plugin Flutter for Kodigos Enterprise. TSC Printer Wifi"
-version: 0.0.1
+version: 0.0.2
 homepage:
 
 environment:
