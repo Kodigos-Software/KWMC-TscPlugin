@@ -1,4 +1,4 @@
-package br.com.kodigos.tsc_printer
+package br.com.kodigos.kodigos_tsc_printer
 
 import android.util.Log
 import java.io.IOException
